@@ -1,5 +1,5 @@
 # pixelStream
-Another implementation of my classic pixel to code illustrator, only in cycle.js
+Another implementation of the classic pixel to code illustrator, only in cycle.js
 
 # Build System is an NPM + Webpack + Cycle.js Build System
 
