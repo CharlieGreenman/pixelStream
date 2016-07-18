@@ -1,4 +1,7 @@
-# An NPM + Webpack + Cycle.js Build System
+# pixelStream
+Another implementation of my classic pixel to code illustrator, only in cycle.js
+
+# Build System is an NPM + Webpack + Cycle.js Build System
 
 ##To use run the following commands
 ``npm install``
@@ -36,8 +39,6 @@
 * Autoprefixer
 * NPM
   * Packages are managed through NPM
-
-
 
 | Phase  | Task                                                                 | Complete |
 |--------|----------------------------------------------------------------------|----------|
