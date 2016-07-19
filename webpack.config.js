@@ -27,7 +27,7 @@ module.exports = {
         loaders: [
             {test: /\.scss$/,loaders: ["style", "css", "autoprefixer-loader", "sass"]},
             {test: /\.jade/, loader: "jade" },
-            {test: /\.jsx?$/, exclude: /node_modules/, loader: 'babel',
+            {test: /\.js?$/, exclude: /node_modules/, loader: 'babel',
                 query: {
                     presets: ['es2015']
                 }
