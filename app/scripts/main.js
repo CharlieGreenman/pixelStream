@@ -5,6 +5,8 @@ import {run} from '@cycle/xstream-run';
 import {makeDOMDriver} from '@cycle/dom';
 import {html} from 'snabbdom-jsx';
 
+import styles from '../scss/components/choose-size-of-grid.scss';
+
 function main() {
   const sinks = {
     DOM: xs.periodic(1000).map(i =>
@@ -17,16 +19,16 @@ function main() {
 function renderForm(sources) {
     const form = {
       DOM: xs.of(false).map(filler =>
-        <div styleName='choose-size' ref = "chooseSizeContainer">
-            <h6 styleName='header' >Choose size of grid</h6>
-            <form styleName='form'>
-              <label styleName='label'>columns</label>
-              <label styleName='label'>rows</label>
-              <input styleName='input' type="text" value = {20} defaultValue={20} id="input-for-columns"  />
-              <input styleName='input' onChange={20} type="text" value = {20} defaultValue={20} id="input-for-rows"  />
-              <label styleName='label'>Pixel Size</label>
-              <button className = 'button' id="create_grid" type="button" >Create Grid</button>
-              <input styleName='input' type="text" value = '20' defaultValue={20} id="input-for-pixel-size"  />
+        <div className={styles.chooseSize} ref = "chooseSizeContainer">
+            <h6 className={styles.header} >Choose size of grid</h6>
+            <form className={styles.form}>
+              <label className={styles.label}>columns</label>
+              <label className={styles.label}>rows</label>
+              <input className={styles.input} type="text" value = {20} defaultValue={20} id="input-for-columns"  />
+              <input className={styles.input} onChange={20} type="text" value = {20} defaultValue={20} id="input-for-rows"  />
+              <label className={styles.label}>Pixel Size</label>
+              <button className={styles.button} id="create_grid" type="button" >Create Grid</button>
+              <input className={styles.input} type="text" value = '20' defaultValue={20} id="input-for-pixel-size"  />
             </form>
         </div>
       )

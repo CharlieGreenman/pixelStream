@@ -1,0 +1,16 @@
+/*
+####################
+####### BASE ####### // All default styling goes here
+####################
+*/
+
+html, body{
+  overflow: hidden;
+  //for some reason changing the background color is causing the grid lines not to show up
+  background: #191919;
+  //background: $light-background-color;
+}
+
+h1,h2,h3,h4,h5,h6{
+  color: #666666;
+}

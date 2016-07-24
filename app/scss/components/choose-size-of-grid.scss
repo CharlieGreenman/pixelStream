@@ -1,0 +1,92 @@
+//BACKGROUND COLORS
+$dark-background-color: #262626;
+$medium-background-color: #333333;
+$light-background-color: #3e4649;
+
+$dark-color: rgba(255, 255, 255, 0.3);
+$medium-color: rgba(255, 255, 255, 0.5) ;
+$light-color: rgba(255, 255, 255, 0.8);
+
+.chooseSize{
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  font-family: 'Reenie Beanie', cursive;
+}
+
+.header{
+  padding: 0;
+  margin: 0;
+  flex-basis: 100%;
+  width: 100%;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  background: #262626;
+  font-family: 'Reenie Beanie', cursive;
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.form{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.label{
+  flex-basis: 50%;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  font-size: 20px;
+  text-transform: uppercase;
+  &:nth-child(1){
+    background: #82998F;
+  }
+  &:nth-child(2){
+    background: #5FBF79;
+  }
+  &:nth-child(5){
+    background: #BF975F;
+  }
+}
+
+.input{
+  background: $dark-background-color;
+  color: $medium-color;
+  height: 30px;
+  line-height: 30px;
+  flex-basis: 50%;
+  border:none;
+  padding: 0;
+  font-family: 'Reenie Beanie', cursive;
+  font-size: 20px;
+  &:nth-child(3){
+    background: #82998F;
+  }
+  &:nth-child(4){
+    background: #5FBF79;
+  }
+  &:nth-child(7){
+    background: #BF975F;
+    margin-top: -30px;
+  }
+}
+
+.button{
+  flex-basis: 50%;
+  height: 60px;
+  background: #F2A030;
+  font-family: 'Reenie Beanie', cursive;
+  font-size: 20px;
+  border: 0;
+  cursor: pointer;
+}
+
+.column{
+  width: 50%;
+  float: left;
+}
