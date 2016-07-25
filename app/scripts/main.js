@@ -15,6 +15,11 @@ function main() {
   };
   return sinks;
 }
+function intent(domSource){
+    return{
+        getFormValues$: domSource.select(styles.button)
+    }
+}
 
 function renderForm(sources) {
     const form = {
