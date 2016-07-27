@@ -15,9 +15,18 @@ function main() {
   };
   return sinks;
 }
+
+function getFormValue(domSource, className){
+  return domSource.select('.' + className)
+    .events('input')
+    .map(ev => ev.target.value);
+}
+
 function intent(domSource){
     return{
-        getFormValues$: domSource.select(styles.button)
+        changeColumnCount$: getFormValue(domSource, 'column'),
+        changeRowCount$: getFormValue(domSource, 'column'),
+        changePixelCount$: getFormValue(domSource, 'pixel'),
     }
 }
 
