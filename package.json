@@ -49,6 +49,7 @@
     }
   },
   "scripts": {
+    "start": "npm run webpack-dev-server",
     "watch": "npm run webpack-dev-server",
     "jade": "jade -P ./app/**/*.jade -o ./dist",
     "sass": "node-sass -P ./app/**/*.scss -o ./dist/scss ",
